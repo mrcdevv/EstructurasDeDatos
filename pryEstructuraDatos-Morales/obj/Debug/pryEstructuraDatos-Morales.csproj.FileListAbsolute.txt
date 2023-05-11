@@ -1,0 +1,14 @@
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\bin\Debug\pryEstructuraDatos-Morales.exe.config
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\bin\Debug\pryEstructuraDatos-Morales.exe
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\bin\Debug\pryEstructuraDatos-Morales.pdb
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.csproj.AssemblyReference.cache
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.csproj.SuggestedBindingRedirects.cache
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.EstructurasLineales.frmEstructuraCola.resources
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.frmDatosPersonales.resources
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.frmInicio.resources
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.Properties.Resources.resources
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.csproj.GenerateResource.cache
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.csproj.CoreCompileInputs.cache
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.exe
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.pdb
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.EstructurasLineales.frmEstructuraPila.resources
