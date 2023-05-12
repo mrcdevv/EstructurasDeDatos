@@ -10,14 +10,14 @@ using System.Windows.Forms;
 
 namespace pryEstructuraDatos_Morales.EstructurasLineales
 {
-    public partial class frmEstructuraCola : Form
+    public partial class frmEstructuraListaSimple : Form
     {
-        public frmEstructuraCola()
+        public frmEstructuraListaSimple()
         {
             InitializeComponent();
         }
 
-        private void frmEstructuraCola_Load(object sender, EventArgs e)
+        private void frmEstructuraListaSimple_Load(object sender, EventArgs e)
         {
             btnEliminar.Enabled = false;
         }
@@ -27,8 +27,8 @@ namespace pryEstructuraDatos_Morales.EstructurasLineales
             e.Handled = !char.IsNumber(e.KeyChar) && e.KeyChar != Convert.ToChar(Keys.Back);
         }
 
-        // CLASE COLA
-        clsCola cola = new clsCola();
+        // CLASE LISTA SIMPLE
+        clsListaSimple lista = new clsListaSimple();
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
@@ -36,22 +36,22 @@ namespace pryEstructuraDatos_Morales.EstructurasLineales
 
             if (txtValor.Text != "" && txtNombre.Text != "" && txtTramite.Text != "")
             {
-
                 // Cargo datos al nodo
                 nodo.Valor = Convert.ToInt32(txtValor.Text);
                 nodo.Nombre = txtNombre.Text;
                 nodo.Tramite = txtTramite.Text;
 
-                cola.Agregar(nodo);
-                cola.Recorrer(lstDatos);
-                cola.Recorrer(dgvDatos);
+                lista.Agregar(nodo);
+                lista.Recorrer(dgvDatos);
+                lista.Recorrer(lstDatos);
+                lista.Recorrer(cbValor);
 
                 txtValor.Text = "";
                 txtNombre.Text = "";
                 txtTramite.Text = "";
 
                 btnEliminar.Enabled = true;
-            } 
+            }
             else
             {
                 MessageBox.Show("Todos los campos deben ser cargados", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -60,26 +60,19 @@ namespace pryEstructuraDatos_Morales.EstructurasLineales
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (cola.primero != null)
+            if (cbValor.Items.Count != 0)
             {
-                txtValorElim.Text = cola.primero.Valor.ToString();
-                txtNombreElim.Text = cola.primero.Nombre;
-                txtTramiteElim.Text = cola.primero.Tramite;
+                int codigo = Convert.ToInt32(cbValor.Text);
 
-
-                cola.Eliminar();
-                cola.Recorrer(lstDatos);
-                cola.Recorrer(dgvDatos);
-            } 
+                lista.Eliminar(codigo);
+                lista.Recorrer(dgvDatos);
+                lista.Recorrer(lstDatos);
+                lista.Recorrer(cbValor);
+            }
             else
             {
                 MessageBox.Show("Debe agregar al menos un elemento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                txtValorElim.Text = "";
-                txtNombreElim.Text = "";
-                txtTramiteElim.Text = "";
-
                 btnEliminar.Enabled = false;
-
             }
         }
     }

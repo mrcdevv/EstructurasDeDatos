@@ -57,6 +57,12 @@
     <Compile Include="EstructurasLineales\frmEstructuraCola.Designer.cs">
       <DependentUpon>frmEstructuraCola.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstructurasLineales\frmEstructuraListaSimple.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructurasLineales\frmEstructuraListaSimple.Designer.cs">
+      <DependentUpon>frmEstructuraListaSimple.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstructurasLineales\frmEstructuraPila.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +86,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraCola.resx">
       <DependentUpon>frmEstructuraCola.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasLineales\frmEstructuraListaSimple.resx">
+      <DependentUpon>frmEstructuraListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraPila.resx">
       <DependentUpon>frmEstructuraPila.cs</DependentUpon>

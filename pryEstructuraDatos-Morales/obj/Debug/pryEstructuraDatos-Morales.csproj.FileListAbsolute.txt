@@ -12,3 +12,4 @@ C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug
 C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.exe
 C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos-Morales.pdb
 C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.EstructurasLineales.frmEstructuraPila.resources
+C:\Users\mrc\dev\pryEstructuraDatos-Morales\pryEstructuraDatos-Morales\obj\Debug\pryEstructuraDatos_Morales.EstructurasLineales.frmEstructuraListaSimple.resources

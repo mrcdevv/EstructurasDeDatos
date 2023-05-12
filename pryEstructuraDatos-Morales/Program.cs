@@ -17,7 +17,7 @@ namespace pryEstructuraDatos_Morales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEstructuraPila());
+            Application.Run(new frmEstructuraListaSimple());
         }
     }
 }
