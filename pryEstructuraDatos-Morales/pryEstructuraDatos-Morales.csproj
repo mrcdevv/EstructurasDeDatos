@@ -57,6 +57,12 @@
     <Compile Include="EstructurasLineales\frmEstructuraCola.Designer.cs">
       <DependentUpon>frmEstructuraCola.cs</DependentUpon>
     </Compile>
+    <Compile Include="EstructurasLineales\frmEstructuraListaDoble.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructurasLineales\frmEstructuraListaDoble.Designer.cs">
+      <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
+    </Compile>
     <Compile Include="EstructurasLineales\frmEstructuraListaSimple.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -70,6 +76,12 @@
       <DependentUpon>frmEstructuraPila.cs</DependentUpon>
     </Compile>
     <Compile Include="EstructurasNoLineales\clsArbolBinario.cs" />
+    <Compile Include="EstructurasNoLineales\frmArbolBinario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EstructurasNoLineales\frmArbolBinario.Designer.cs">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmDatosPersonales.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,11 +99,17 @@
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraCola.resx">
       <DependentUpon>frmEstructuraCola.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasLineales\frmEstructuraListaDoble.resx">
+      <DependentUpon>frmEstructuraListaDoble.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraListaSimple.resx">
       <DependentUpon>frmEstructuraListaSimple.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraPila.resx">
       <DependentUpon>frmEstructuraPila.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EstructurasNoLineales\frmArbolBinario.resx">
+      <DependentUpon>frmArbolBinario.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmDatosPersonales.resx">
       <DependentUpon>frmDatosPersonales.cs</DependentUpon>

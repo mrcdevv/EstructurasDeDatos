@@ -1,4 +1,5 @@
 ﻿using pryEstructuraDatos_Morales.EstructurasLineales;
+using pryEstructuraDatos_Morales.EstructurasNoLineales;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -17,7 +18,7 @@ namespace pryEstructuraDatos_Morales
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmEstructuraListaSimple());
+            Application.Run(new frmInicio());
         }
     }
 }

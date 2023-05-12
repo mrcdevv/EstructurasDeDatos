@@ -211,18 +211,18 @@
             // 
             this.txtValor.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
             this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtValor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtValor.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtValor.Location = new System.Drawing.Point(123, 49);
             this.txtValor.Name = "txtValor";
             this.txtValor.Size = new System.Drawing.Size(93, 26);
-            this.txtValor.TabIndex = 17;
+            this.txtValor.TabIndex = 1;
             this.txtValor.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtValor_KeyPress);
             // 
             // txtTramite
             // 
             this.txtTramite.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
             this.txtTramite.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtTramite.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtTramite.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtTramite.Location = new System.Drawing.Point(80, 130);
             this.txtTramite.Name = "txtTramite";
             this.txtTramite.Size = new System.Drawing.Size(136, 26);
@@ -232,7 +232,7 @@
             // 
             this.txtNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
             this.txtNombre.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtNombre.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.txtNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.txtNombre.Location = new System.Drawing.Point(80, 89);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(136, 26);
@@ -384,9 +384,11 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.lstDatos);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmEstructuraPila";
-            this.Text = "Estructura Dinamica Lineal - Pila";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Estructura Dinamica no Lineal - Pila";
             this.Load += new System.EventHandler(this.frmEstructuraPila_Load);
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

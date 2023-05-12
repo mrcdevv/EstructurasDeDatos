@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDatosPersonales));
             this.lblComision = new System.Windows.Forms.Label();
             this.lblMateria = new System.Windows.Forms.Label();
             this.lblDNI = new System.Windows.Forms.Label();
@@ -40,7 +41,8 @@
             // 
             this.lblComision.AutoSize = true;
             this.lblComision.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblComision.Location = new System.Drawing.Point(311, 269);
+            this.lblComision.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblComision.Location = new System.Drawing.Point(306, 223);
             this.lblComision.Name = "lblComision";
             this.lblComision.Size = new System.Drawing.Size(93, 20);
             this.lblComision.TabIndex = 9;
@@ -50,7 +52,8 @@
             // 
             this.lblMateria.AutoSize = true;
             this.lblMateria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblMateria.Location = new System.Drawing.Point(311, 220);
+            this.lblMateria.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblMateria.Location = new System.Drawing.Point(306, 174);
             this.lblMateria.Name = "lblMateria";
             this.lblMateria.Size = new System.Drawing.Size(213, 20);
             this.lblMateria.TabIndex = 8;
@@ -60,7 +63,8 @@
             // 
             this.lblDNI.AutoSize = true;
             this.lblDNI.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblDNI.Location = new System.Drawing.Point(311, 171);
+            this.lblDNI.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblDNI.Location = new System.Drawing.Point(306, 125);
             this.lblDNI.Name = "lblDNI";
             this.lblDNI.Size = new System.Drawing.Size(117, 20);
             this.lblDNI.TabIndex = 7;
@@ -70,7 +74,8 @@
             // 
             this.lblNombre.AutoSize = true;
             this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.lblNombre.Location = new System.Drawing.Point(311, 122);
+            this.lblNombre.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblNombre.Location = new System.Drawing.Point(306, 76);
             this.lblNombre.Name = "lblNombre";
             this.lblNombre.Size = new System.Drawing.Size(242, 20);
             this.lblNombre.TabIndex = 6;
@@ -78,9 +83,11 @@
             // 
             // pbPerfil
             // 
-            this.pbPerfil.Location = new System.Drawing.Point(25, 69);
+            this.pbPerfil.Image = ((System.Drawing.Image)(resources.GetObject("pbPerfil.Image")));
+            this.pbPerfil.Location = new System.Drawing.Point(21, 12);
             this.pbPerfil.Name = "pbPerfil";
-            this.pbPerfil.Size = new System.Drawing.Size(250, 284);
+            this.pbPerfil.Size = new System.Drawing.Size(279, 284);
+            this.pbPerfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pbPerfil.TabIndex = 5;
             this.pbPerfil.TabStop = false;
             // 
@@ -88,14 +95,17 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(578, 378);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
+            this.ClientSize = new System.Drawing.Size(578, 319);
             this.Controls.Add(this.lblComision);
             this.Controls.Add(this.lblMateria);
             this.Controls.Add(this.lblDNI);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.pbPerfil);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "frmDatosPersonales";
-            this.Text = "frmDatosPersonales";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Datos Personales";
             ((System.ComponentModel.ISupportInitialize)(this.pbPerfil)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
