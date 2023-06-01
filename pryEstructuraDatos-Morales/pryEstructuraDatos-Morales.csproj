@@ -46,6 +46,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseDeDatos\clsBaseDatos.cs" />
+    <Compile Include="BaseDeDatos\frmBaseDeDatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BaseDeDatos\frmBaseDeDatos.Designer.cs">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
+    </Compile>
     <Compile Include="clsNodo.cs" />
     <Compile Include="EstructurasLineales\clsCola.cs" />
     <Compile Include="EstructurasLineales\clsListaDoble.cs" />
@@ -96,6 +103,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="BaseDeDatos\frmBaseDeDatos.resx">
+      <DependentUpon>frmBaseDeDatos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="EstructurasLineales\frmEstructuraCola.resx">
       <DependentUpon>frmEstructuraCola.cs</DependentUpon>
     </EmbeddedResource>

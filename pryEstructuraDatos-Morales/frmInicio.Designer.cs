@@ -40,6 +40,7 @@
             this.noLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolBinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lblTitulo = new System.Windows.Forms.Label();
+            this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -50,7 +51,8 @@
             this.msMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
             this.linealesToolStripMenuItem,
-            this.noLinealesToolStripMenuItem});
+            this.noLinealesToolStripMenuItem,
+            this.baseDeDatosToolStripMenuItem});
             this.msMenu.Location = new System.Drawing.Point(0, 0);
             this.msMenu.Name = "msMenu";
             this.msMenu.Size = new System.Drawing.Size(820, 29);
@@ -130,7 +132,7 @@
             // arbolBinarioToolStripMenuItem
             // 
             this.arbolBinarioToolStripMenuItem.Name = "arbolBinarioToolStripMenuItem";
-            this.arbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
+            this.arbolBinarioToolStripMenuItem.Size = new System.Drawing.Size(171, 26);
             this.arbolBinarioToolStripMenuItem.Text = "Arbol binario";
             this.arbolBinarioToolStripMenuItem.Click += new System.EventHandler(this.arbolBinarioToolStripMenuItem_Click);
             // 
@@ -147,6 +149,12 @@
             this.lblTitulo.TabIndex = 2;
             this.lblTitulo.Text = "Bienvenido/a";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // baseDeDatosToolStripMenuItem
+            // 
+            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
             // 
             // frmInicio
             // 
@@ -182,6 +190,7 @@
         private System.Windows.Forms.ToolStripMenuItem noLinealesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem arbolBinarioToolStripMenuItem;
         private System.Windows.Forms.Label lblTitulo;
+        private System.Windows.Forms.ToolStripMenuItem baseDeDatosToolStripMenuItem;
     }
 }
 
