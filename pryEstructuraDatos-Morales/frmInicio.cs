@@ -1,4 +1,5 @@
-﻿using pryEstructuraDatos_Morales.EstructurasLineales;
+﻿using pryEstructuraDatos_Morales.BaseDeDatos;
+using pryEstructuraDatos_Morales.EstructurasLineales;
 using pryEstructuraDatos_Morales.EstructurasNoLineales;
 using System;
 using System.Collections.Generic;
@@ -58,6 +59,24 @@ namespace pryEstructuraDatos_Morales
         {
             frmArbolBinario frmArbolBinario = new frmArbolBinario();
             frmArbolBinario.ShowDialog();
+        }
+
+        private void operacionesConTablasDeBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmBaseDeDatos frmBaseDeDatos = new frmBaseDeDatos();
+            frmBaseDeDatos.ShowDialog();
+        }
+
+        private void consultasEnLaBaseDeDatosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaBaseDeDatos frmConsultaBaseDeDatos = new frmConsultaBaseDeDatos();
+            frmConsultaBaseDeDatos.ShowDialog();
+        }
+
+        private void consultaPorOperacionesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmConsultaPorOperaciones frmConsultaPorOperaciones = new frmConsultaPorOperaciones();
+            frmConsultaPorOperaciones.ShowDialog();
         }
     }
 }

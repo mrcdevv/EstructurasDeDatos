@@ -39,14 +39,17 @@
             this.listaEnlazadaDobleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.noLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolBinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTitulo = new System.Windows.Forms.Label();
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultasEnLaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.consultaPorOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // msMenu
             // 
-            this.msMenu.BackColor = System.Drawing.Color.DarkGoldenrod;
+            this.msMenu.BackColor = System.Drawing.Color.SlateGray;
             this.msMenu.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.msMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.sistemaToolStripMenuItem,
@@ -64,6 +67,7 @@
             this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.datosToolStripMenuItem,
             this.salirToolStripMenuItem});
+            this.sistemaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
             this.sistemaToolStripMenuItem.Text = "Sistema";
@@ -89,6 +93,7 @@
             this.colasToolStripMenuItem,
             this.listaEnlazadaSimpleToolStripMenuItem,
             this.listaEnlazadaDobleToolStripMenuItem});
+            this.linealesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.linealesToolStripMenuItem.Name = "linealesToolStripMenuItem";
             this.linealesToolStripMenuItem.Size = new System.Drawing.Size(78, 25);
             this.linealesToolStripMenuItem.Text = "Lineales";
@@ -125,6 +130,7 @@
             // 
             this.noLinealesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.arbolBinarioToolStripMenuItem});
+            this.noLinealesToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.noLinealesToolStripMenuItem.Name = "noLinealesToolStripMenuItem";
             this.noLinealesToolStripMenuItem.Size = new System.Drawing.Size(99, 25);
             this.noLinealesToolStripMenuItem.Text = "No lineales";
@@ -136,13 +142,24 @@
             this.arbolBinarioToolStripMenuItem.Text = "Arbol binario";
             this.arbolBinarioToolStripMenuItem.Click += new System.EventHandler(this.arbolBinarioToolStripMenuItem_Click);
             // 
+            // baseDeDatosToolStripMenuItem
+            // 
+            this.baseDeDatosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem,
+            this.consultasEnLaBaseDeDatosToolStripMenuItem,
+            this.consultaPorOperacionesToolStripMenuItem});
+            this.baseDeDatosToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
+            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
+            this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
+            // 
             // lblTitulo
             // 
             this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblTitulo.Location = new System.Drawing.Point(0, 29);
             this.lblTitulo.Name = "lblTitulo";
             this.lblTitulo.Size = new System.Drawing.Size(820, 469);
@@ -150,21 +167,37 @@
             this.lblTitulo.Text = "Bienvenido/a";
             this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // baseDeDatosToolStripMenuItem
+            // operacionesConTablasDeBaseDeDatosToolStripMenuItem
             // 
-            this.baseDeDatosToolStripMenuItem.Name = "baseDeDatosToolStripMenuItem";
-            this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
-            this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem.Name = "operacionesConTablasDeBaseDeDatosToolStripMenuItem";
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(361, 26);
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem.Text = "Operaciones con tablas de base de datos";
+            this.operacionesConTablasDeBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.operacionesConTablasDeBaseDeDatosToolStripMenuItem_Click);
+            // 
+            // consultasEnLaBaseDeDatosToolStripMenuItem
+            // 
+            this.consultasEnLaBaseDeDatosToolStripMenuItem.Name = "consultasEnLaBaseDeDatosToolStripMenuItem";
+            this.consultasEnLaBaseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(361, 26);
+            this.consultasEnLaBaseDeDatosToolStripMenuItem.Text = "Consultas en la base de datos";
+            this.consultasEnLaBaseDeDatosToolStripMenuItem.Click += new System.EventHandler(this.consultasEnLaBaseDeDatosToolStripMenuItem_Click);
+            // 
+            // consultaPorOperacionesToolStripMenuItem
+            // 
+            this.consultaPorOperacionesToolStripMenuItem.Name = "consultaPorOperacionesToolStripMenuItem";
+            this.consultaPorOperacionesToolStripMenuItem.Size = new System.Drawing.Size(361, 26);
+            this.consultaPorOperacionesToolStripMenuItem.Text = "Consulta por operaciones";
+            this.consultaPorOperacionesToolStripMenuItem.Click += new System.EventHandler(this.consultaPorOperacionesToolStripMenuItem_Click);
             // 
             // frmInicio
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(9)))), ((int)(((byte)(12)))), ((int)(((byte)(43)))));
             this.ClientSize = new System.Drawing.Size(820, 507);
             this.Controls.Add(this.lblTitulo);
             this.Controls.Add(this.msMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "frmInicio";
             this.Text = "Inicio";
@@ -191,6 +224,9 @@
         private System.Windows.Forms.ToolStripMenuItem arbolBinarioToolStripMenuItem;
         private System.Windows.Forms.Label lblTitulo;
         private System.Windows.Forms.ToolStripMenuItem baseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem operacionesConTablasDeBaseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultasEnLaBaseDeDatosToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem consultaPorOperacionesToolStripMenuItem;
     }
 }
 
