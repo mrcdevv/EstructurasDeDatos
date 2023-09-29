@@ -30,7 +30,6 @@
         {
             this.msMenu = new System.Windows.Forms.MenuStrip();
             this.sistemaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.datosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.linealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.pilasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,10 +39,10 @@
             this.noLinealesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.arbolBinarioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.baseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.lblTitulo = new System.Windows.Forms.Label();
             this.operacionesConTablasDeBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultasEnLaBaseDeDatosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultaPorOperacionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.lblTitulo = new System.Windows.Forms.Label();
             this.msMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -65,24 +64,16 @@
             // sistemaToolStripMenuItem
             // 
             this.sistemaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.datosToolStripMenuItem,
             this.salirToolStripMenuItem});
             this.sistemaToolStripMenuItem.ForeColor = System.Drawing.SystemColors.ControlText;
             this.sistemaToolStripMenuItem.Name = "sistemaToolStripMenuItem";
             this.sistemaToolStripMenuItem.Size = new System.Drawing.Size(77, 25);
             this.sistemaToolStripMenuItem.Text = "Sistema";
             // 
-            // datosToolStripMenuItem
-            // 
-            this.datosToolStripMenuItem.Name = "datosToolStripMenuItem";
-            this.datosToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
-            this.datosToolStripMenuItem.Text = "Datos del programador";
-            this.datosToolStripMenuItem.Click += new System.EventHandler(this.datosToolStripMenuItem_Click);
-            // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.salirToolStripMenuItem.Text = "Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -153,20 +144,6 @@
             this.baseDeDatosToolStripMenuItem.Size = new System.Drawing.Size(119, 25);
             this.baseDeDatosToolStripMenuItem.Text = "Base de Datos";
             // 
-            // lblTitulo
-            // 
-            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
-            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.lblTitulo.Location = new System.Drawing.Point(0, 29);
-            this.lblTitulo.Name = "lblTitulo";
-            this.lblTitulo.Size = new System.Drawing.Size(820, 469);
-            this.lblTitulo.TabIndex = 2;
-            this.lblTitulo.Text = "Bienvenido/a";
-            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // operacionesConTablasDeBaseDeDatosToolStripMenuItem
             // 
             this.operacionesConTablasDeBaseDeDatosToolStripMenuItem.Name = "operacionesConTablasDeBaseDeDatosToolStripMenuItem";
@@ -187,6 +164,20 @@
             this.consultaPorOperacionesToolStripMenuItem.Size = new System.Drawing.Size(361, 26);
             this.consultaPorOperacionesToolStripMenuItem.Text = "Consulta por operaciones";
             this.consultaPorOperacionesToolStripMenuItem.Click += new System.EventHandler(this.consultaPorOperacionesToolStripMenuItem_Click);
+            // 
+            // lblTitulo
+            // 
+            this.lblTitulo.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblTitulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 50F);
+            this.lblTitulo.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblTitulo.Location = new System.Drawing.Point(0, 29);
+            this.lblTitulo.Name = "lblTitulo";
+            this.lblTitulo.Size = new System.Drawing.Size(820, 469);
+            this.lblTitulo.TabIndex = 2;
+            this.lblTitulo.Text = "Bienvenido/a";
+            this.lblTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmInicio
             // 
@@ -213,7 +204,6 @@
 
         private System.Windows.Forms.MenuStrip msMenu;
         private System.Windows.Forms.ToolStripMenuItem sistemaToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem datosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem linealesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem pilasToolStripMenuItem;

@@ -20,12 +20,6 @@ namespace pryEstructuraDatos_Morales
             InitializeComponent();
         }
 
-        private void datosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            frmDatosPersonales frmDatosPersonales = new frmDatosPersonales();
-            frmDatosPersonales.ShowDialog();
-        }
-
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             Application.Exit();

@@ -80,7 +80,7 @@
             // 
             // panel3
             // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            this.panel3.BackColor = System.Drawing.Color.LightSteelBlue;
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Location = new System.Drawing.Point(12, 251);
             this.panel3.Name = "panel3";
@@ -89,6 +89,7 @@
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.LightSteelBlue;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";

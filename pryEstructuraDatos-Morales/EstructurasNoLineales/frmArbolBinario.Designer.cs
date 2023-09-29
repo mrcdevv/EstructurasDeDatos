@@ -28,9 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle28 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle29 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle30 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
             this.panel1 = new System.Windows.Forms.Panel();
             this.txtValor = new System.Windows.Forms.TextBox();
@@ -47,11 +47,11 @@
             this.btnEliminar = new System.Windows.Forms.Button();
             this.lblValorElim = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.optPost = new System.Windows.Forms.RadioButton();
             this.optDescOrd = new System.Windows.Forms.RadioButton();
             this.lblOrdenar = new System.Windows.Forms.Label();
-            this.optAscOrd = new System.Windows.Forms.RadioButton();
-            this.optPost = new System.Windows.Forms.RadioButton();
             this.optPre = new System.Windows.Forms.RadioButton();
+            this.optAscOrd = new System.Windows.Forms.RadioButton();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
             this.Valor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -243,6 +243,17 @@
             this.panel4.Size = new System.Drawing.Size(203, 224);
             this.panel4.TabIndex = 27;
             // 
+            // optPost
+            // 
+            this.optPost.AutoSize = true;
+            this.optPost.Location = new System.Drawing.Point(32, 161);
+            this.optPost.Name = "optPost";
+            this.optPost.Size = new System.Drawing.Size(99, 24);
+            this.optPost.TabIndex = 16;
+            this.optPost.Text = "PostOrder";
+            this.optPost.UseVisualStyleBackColor = true;
+            this.optPost.CheckedChanged += new System.EventHandler(this.optPost_CheckedChanged);
+            // 
             // optDescOrd
             // 
             this.optDescOrd.AutoSize = true;
@@ -264,6 +275,17 @@
             this.lblOrdenar.Text = "InOrder";
             this.lblOrdenar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // optPre
+            // 
+            this.optPre.AutoSize = true;
+            this.optPre.Location = new System.Drawing.Point(32, 120);
+            this.optPre.Name = "optPre";
+            this.optPre.Size = new System.Drawing.Size(91, 24);
+            this.optPre.TabIndex = 15;
+            this.optPre.Text = "PreOrder";
+            this.optPre.UseVisualStyleBackColor = true;
+            this.optPre.CheckedChanged += new System.EventHandler(this.optPre_CheckedChanged);
+            // 
             // optAscOrd
             // 
             this.optAscOrd.AutoSize = true;
@@ -277,52 +299,30 @@
             this.optAscOrd.UseVisualStyleBackColor = true;
             this.optAscOrd.CheckedChanged += new System.EventHandler(this.optAscOrd_CheckedChanged);
             // 
-            // optPost
-            // 
-            this.optPost.AutoSize = true;
-            this.optPost.Location = new System.Drawing.Point(32, 161);
-            this.optPost.Name = "optPost";
-            this.optPost.Size = new System.Drawing.Size(99, 24);
-            this.optPost.TabIndex = 16;
-            this.optPost.Text = "PostOrder";
-            this.optPost.UseVisualStyleBackColor = true;
-            this.optPost.CheckedChanged += new System.EventHandler(this.optPost_CheckedChanged);
-            // 
-            // optPre
-            // 
-            this.optPre.AutoSize = true;
-            this.optPre.Location = new System.Drawing.Point(32, 120);
-            this.optPre.Name = "optPre";
-            this.optPre.Size = new System.Drawing.Size(91, 24);
-            this.optPre.TabIndex = 15;
-            this.optPre.Text = "PreOrder";
-            this.optPre.UseVisualStyleBackColor = true;
-            this.optPre.CheckedChanged += new System.EventHandler(this.optPre_CheckedChanged);
-            // 
             // dgvDatos
             // 
             this.dgvDatos.AllowUserToAddRows = false;
             this.dgvDatos.AllowUserToDeleteRows = false;
             this.dgvDatos.AllowUserToResizeColumns = false;
             this.dgvDatos.AllowUserToResizeRows = false;
-            dataGridViewCellStyle28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle28.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle28.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle28.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvDatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle28;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvDatos.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDatos.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
             this.dgvDatos.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvDatos.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvDatos.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle29.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle29.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            dataGridViewCellStyle29.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle29.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
-            dataGridViewCellStyle29.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle29.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle29;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(38)))), ((int)(((byte)(45)))), ((int)(((byte)(99)))));
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDatos.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDatos.ColumnHeadersHeight = 35;
             this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Valor,
@@ -336,11 +336,11 @@
             this.dgvDatos.ReadOnly = true;
             this.dgvDatos.RowHeadersVisible = false;
             this.dgvDatos.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
-            dataGridViewCellStyle30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle30.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            dataGridViewCellStyle30.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
-            dataGridViewCellStyle30.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvDatos.RowsDefaultCellStyle = dataGridViewCellStyle30;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(37)))), ((int)(((byte)(68)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.dgvDatos.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDatos.RowTemplate.Height = 30;
             this.dgvDatos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDatos.Size = new System.Drawing.Size(399, 370);
@@ -399,6 +399,7 @@
             // 
             // picImagen
             // 
+            this.picImagen.BackColor = System.Drawing.Color.LightSteelBlue;
             this.picImagen.Image = ((System.Drawing.Image)(resources.GetObject("picImagen.Image")));
             this.picImagen.Location = new System.Drawing.Point(0, 0);
             this.picImagen.Name = "picImagen";
